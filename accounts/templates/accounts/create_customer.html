@@ -1,0 +1,27 @@
+{% extends 'accounts/main.html' %}
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+    <div class="row">
+    <div class="col-4"> 
+        <div class="card card-body"> 
+        {{customer_form.name.label}}
+        {{customer_form.name}}
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card card-body">
+        {{customer_form.phone.label}}
+        {{customer_form.phone}}
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card card-body">
+        {{customer_form.email.label}}
+        {{customer_form.email}}
+        </div>
+    </div>
+    <input type="submit" class="btn btn-info">
+    </form>
+</div>
+{% endblock %}
