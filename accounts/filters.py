@@ -11,7 +11,6 @@ class OrderFilter(django_filters.FilterSet):
         exclude=['customer','date_created']
 
 
-
 # start_date and end_date is the range given for datefield
 # these fields are custom fields in the template and not in the actual Order table
 
